@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
+    <meta http-equiv="refresh" content="357">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script>
+        function startTime() {
+            const hari = ['Senin', 'Selasa', 'Rabu', 'Kamis', "Jum'at", 'Sabtu', 'Minggu'];
+            const bulan = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des']
+            const today = new Date();
+            let d = today.getDay();
+            let t = today.getDate();
+            let b = today.getMonth();
+            let y = today.getFullYear();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            let s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('waktu').innerHTML = hari[d] + ", " + t + " " + bulan[b] + " " + y + " - " + h + ":" + m + ":" + s + " LT";
+            setTimeout(startTime, 1000);
+        }
+
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+
+    <style>
+        .swiper {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    
+</head>
+<body onload="startTime()">
+    <section class="bg-blue-100 static">
+        <div class="bg-red-700 bg-cover h-screen" style="background-image: url(/assets/bg.jpg);">
+            <!-- <video autoplay loop muted class="absolute z-0 min-w-full w-auto max-w-none">
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4"
+                    type="video/mp4" />
+                Your browser does not support the video tag.
+            </video> -->
+            <!-- <div class="absolute z-0 h-screen min-w-full w-auto max-w-none">
+                <iframe class="absolute z-0 h-screen min-w-full" src="https://www.youtube.com/embed/SQuPUBL1Fr0?controls=0&autoplay=1&mute=1" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div> -->
+
+            <!-- <iframe height="400px" class="object-cover w-full"
+                src="https://www.youtube.com/embed/Wxi7jVwnN90?controls=0&autoplay=1&mute=1" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe> -->
+                <!-- <div class="bg-white rounded-sm justify-center absolute z-10 max-w-full">
+                    <img src="https://baguna.id/dashboard/img/Banner-Baguna.png" alt="">
+                </div> -->
+
+            <div class="swiper mySwiper2">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="w-full px-20 py-16">
+                            <div class="h-full">
+                                <div class="relative rounded-lg shadow-lg bg-gray-700 h-full">
+                                    <img src="/assets/jakarta.jfif" class="absolute inset-0 object-cover w-full h-full rounded-lg shadow-md" alt="" />
+                                    <div class="relative bg-opacity-80 bg-indigo-900 rounded-lg shadow-xl ">
+                                        <div
+                                            class="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-48">
+                                            <div class="flex flex-col items-center justify-between xl:flex-row">
+                                                <div class="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
+                                                    <div class="flex gap-2 mb-6 border-b-2 py-4 w-16">
+                                                        <img src="https://www.bmkg.go.id/asset/img/logo/logo-bmkg.svg" width="60" class="shadow-md">
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/1200px-Coat_of_arms_of_Jakarta.svg.png"
+                                                            class="shadow-md h-20">
+                                                    </div>
+                                                    <h2
+                                                        class="max-w-lg mb-2 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+                                                        DKI Jakarta
+                                                    </h2>
+                                                    <p class="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
+                                                        Jakarta (pengucapan bahasa Indonesia: [dʒaˈkarta] atau secara
+                                                        resmi bernama Daerah Khusus
+                                                        Ibukota Jakarta
+                                                        (disingkat DKI Jakarta) adalah ibu kota negara dan kota terbesar
+                                                        di Indonesia. Jakarta merupakan
+                                                        satu-satunya kota di
+                                                        Indonesia yang memiliki status setingkat provinsi. Jakarta
+                                                        terletak di pesisir bagian barat laut
+                                                        Pulau Jawa.
+                                                    </p>
+                                                    <div class="flex flex-row gap-2 text-white">
+                                                        <div class="flex flex-col w-1/4 bg-gray-100 text-black rounded-lg pb-4">
+                                                            <div class="text-center pt-2 mb-2">
+                                                                <svg class="w-10 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                                                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 129 129"
+                                                                    enable-background="new 0 0 129 129">
+                                                                    <g>
+                                                                        <path
+                                                                            d="m64.5,92.6c15.5,0 28-12.6 28-28s-12.6-28-28-28-28,12.6-28,28 12.5,28 28,28zm0-47.9c11,0 19.9,8.9 19.9,19.9 0,11-8.9,19.9-19.9,19.9s-19.9-8.9-19.9-19.9c0-11 8.9-19.9 19.9-19.9z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#000000" />
+                                                                        <path
+                                                                            d="m68.6,23.6v-12.9c0-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1v12.9c0,2.3 1.8,4.1 4.1,4.1s4.1-1.8 4.1-4.1z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#000000" />
+                                                                        <path
+                                                                            d="m60.4,105.6v12.9c0,2.3 1.8,4.1 4.1,4.1s4.1-1.8 4.1-4.1v-12.9c0-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#000000" />
+                                                                        <path
+                                                                            d="m96.4,38.5l9.1-9.1c1.6-1.6 1.6-4.2 0-5.8-1.6-1.6-4.2-1.6-5.8,0l-9.1,9.1c-1.6,1.6-1.6,4.2 0,5.8 0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#000000" />
+                                                                        <path
+                                                                            d="m23.5,105.6c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l9.1-9.1c1.6-1.6 1.6-4.2 0-5.8-1.6-1.6-4.2-1.6-5.8,0l-9.1,9.1c-1.6,1.6-1.6,4.2 0,5.8z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#000000" />
+                                                                        <path
+                                                                            d="m122.5,64.6c0-2.3-1.8-4.1-4.1-4.1h-12.9c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h12.9c2.2,1.42109e-14 4.1-1.8 4.1-4.1z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#000000" />
+                                                                        <path
+                                                                            d="m10.6,68.7h12.9c2.3,0 4.1-1.8 4.1-4.1 0-2.3-1.8-4.1-4.1-4.1h-12.9c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.9,4.1 4.1,4.1z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#000000" />
+                                                                        <path
+                                                                            d="m102.6,106.8c1,0 2.1-0.4 2.9-1.2 1.6-1.6 1.6-4.2 0-5.8l-9.1-9.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l9.1,9.1c0.8,0.8 1.9,1.2 2.9,1.2z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#000000" />
+                                                                        <path
+                                                                            d="m38.4,38.5c1.6-1.6 1.6-4.2 0-5.8l-9.1-9.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l9.1,9.1c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#000000" />
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <b class="font-normal">Tue</b><br>
+                                                                <strong class="text-xl">29ºC</strong>
+                                                            </div>
+                                                        </div>
+                                    
+                                                        <div class="flex flex-col w-1/4 bg-gray-900 rounded-lg">
+                                                            <div class="text-center pt-2 mb-2">
+                                                                <svg class="w-10 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                                                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                                                                    viewBox="0 0 33.062 33.062" style="enable-background:new 0 0 33.062 33.062;"
+                                                                    xml:space="preserve">
+                                                                    <path
+                                                                        d="M25.615,26.608H6.442C2.89,26.608,0,23.719,0,20.168c0-3.502,2.81-6.361,6.294-6.439c1.241-4.304,5.161-7.275,9.67-7.275   c3.736,0,7.101,2.023,8.866,5.306c0.26-0.026,0.522-0.04,0.784-0.04c4.106,0,7.446,3.339,7.446,7.443   C33.062,23.268,29.721,26.608,25.615,26.608z M6.527,14.732C3.437,14.732,1,17.17,1,20.168c0,2.999,2.441,5.439,5.442,5.439h19.173   c3.555,0,6.446-2.892,6.446-6.445c0-3.553-2.892-6.443-6.446-6.443c-0.314,0-0.63,0.022-0.939,0.066   c-0.229,0.063-0.469-0.046-0.574-0.259c-1.545-3.13-4.663-5.073-8.137-5.073c-4.183,0-7.803,2.839-8.804,6.904   c-0.056,0.228-0.278,0.372-0.498,0.381l-0.127-0.007C6.533,14.732,6.53,14.732,6.527,14.732z"
+                                                                        data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                        fill="#FFFFFF" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <b class="font-normal">Wed</b><br>
+                                                                <strong class="text-xl">21ºC</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex flex-col w-1/4 bg-gray-900 rounded-lg">
+                                                            <div class="text-center pt-2 mb-2">
+                                                                <svg class="w-10 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                                                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                                                                    viewBox="0 0 33.062 33.062" style="enable-background:new 0 0 33.062 33.062;"
+                                                                    xml:space="preserve">
+                                                                    <path
+                                                                        d="M25.615,26.608H6.442C2.89,26.608,0,23.719,0,20.168c0-3.502,2.81-6.361,6.294-6.439c1.241-4.304,5.161-7.275,9.67-7.275   c3.736,0,7.101,2.023,8.866,5.306c0.26-0.026,0.522-0.04,0.784-0.04c4.106,0,7.446,3.339,7.446,7.443   C33.062,23.268,29.721,26.608,25.615,26.608z M6.527,14.732C3.437,14.732,1,17.17,1,20.168c0,2.999,2.441,5.439,5.442,5.439h19.173   c3.555,0,6.446-2.892,6.446-6.445c0-3.553-2.892-6.443-6.446-6.443c-0.314,0-0.63,0.022-0.939,0.066   c-0.229,0.063-0.469-0.046-0.574-0.259c-1.545-3.13-4.663-5.073-8.137-5.073c-4.183,0-7.803,2.839-8.804,6.904   c-0.056,0.228-0.278,0.372-0.498,0.381l-0.127-0.007C6.533,14.732,6.53,14.732,6.527,14.732z"
+                                                                        data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                        fill="#FFFFFF" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <b class="font-normal">Thu</b><br>
+                                                                <strong class="text-xl">18ºC</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex flex-col w-1/4 bg-gray-900 rounded-lg">
+                                                            <div class="text-center pt-2 mb-2">
+                                                                <svg class="w-10 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                                                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 129 129"
+                                                                    enable-background="new 0 0 129 129">
+                                                                    <g>
+                                                                        <path
+                                                                            d="m64.5,92.6c15.5,0 28-12.6 28-28s-12.6-28-28-28-28,12.6-28,28 12.5,28 28,28zm0-47.9c11,0 19.9,8.9 19.9,19.9 0,11-8.9,19.9-19.9,19.9s-19.9-8.9-19.9-19.9c0-11 8.9-19.9 19.9-19.9z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#FFFFFF" />
+                                                                        <path
+                                                                            d="m68.6,23.6v-12.9c0-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1v12.9c0,2.3 1.8,4.1 4.1,4.1s4.1-1.8 4.1-4.1z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#FFFFFF" />
+                                                                        <path
+                                                                            d="m60.4,105.6v12.9c0,2.3 1.8,4.1 4.1,4.1s4.1-1.8 4.1-4.1v-12.9c0-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#FFFFFF" />
+                                                                        <path
+                                                                            d="m96.4,38.5l9.1-9.1c1.6-1.6 1.6-4.2 0-5.8-1.6-1.6-4.2-1.6-5.8,0l-9.1,9.1c-1.6,1.6-1.6,4.2 0,5.8 0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#FFFFFF" />
+                                                                        <path
+                                                                            d="m23.5,105.6c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l9.1-9.1c1.6-1.6 1.6-4.2 0-5.8-1.6-1.6-4.2-1.6-5.8,0l-9.1,9.1c-1.6,1.6-1.6,4.2 0,5.8z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#FFFFFF" />
+                                                                        <path
+                                                                            d="m122.5,64.6c0-2.3-1.8-4.1-4.1-4.1h-12.9c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h12.9c2.2,1.42109e-14 4.1-1.8 4.1-4.1z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#FFFFFF" />
+                                                                        <path
+                                                                            d="m10.6,68.7h12.9c2.3,0 4.1-1.8 4.1-4.1 0-2.3-1.8-4.1-4.1-4.1h-12.9c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.9,4.1 4.1,4.1z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#FFFFFF" />
+                                                                        <path
+                                                                            d="m102.6,106.8c1,0 2.1-0.4 2.9-1.2 1.6-1.6 1.6-4.2 0-5.8l-9.1-9.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l9.1,9.1c0.8,0.8 1.9,1.2 2.9,1.2z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#FFFFFF" />
+                                                                        <path
+                                                                            d="m38.4,38.5c1.6-1.6 1.6-4.2 0-5.8l-9.1-9.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l9.1,9.1c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2z"
+                                                                            data-original="#000000" class="active-path" data-old_color="#000000"
+                                                                            fill="#FFFFFF" />
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <b class="font-normal">Fri</b><br>
+                                                                <strong class="text-xl">25ºC</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="w-full max-w-xl xl:px-8 xl:w-4/12">
+                                                    <div class="rounded-md shadow-2xl bg-white">
+                                                        <!-- component -->
+                                                        <div
+                                                            class="w-full shadow-2xl cursor-pointer rounded-md flex flex-col justify-center items-center text-center p-16">
+                                                            <div class="text-md font-bold flex flex-col text-gray-900">
+                                                                <span class="uppercase">Today</span> <span class="font-normal text-gray-700 text-sm">July
+                                                                    29</span>
+                                                            </div>
+                                                            <div class="w-32 h-32 flex items-center justify-center">
+                                                                <svg class="h-20" viewBox="0 0 81 73" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                        <g id="Desktop-HD" transform="translate(-174.000000, -308.000000)"
+                                                                            fill-rule="nonzero">
+                                                                            <g id="Group" transform="translate(95.000000, 222.000000)">
+                                                                                <g id="2" transform="translate(79.000000, 86.000000)">
+                                                                                    <path
+                                                                                        d="M35.288454,26.4312368 C34.8062502,27.5960191 33.4711041,28.1493583 32.3063218,27.6671545 C31.1415395,27.1849507 30.5882004,25.8498046 31.0704042,24.6850223 C33.990421,17.6316069 40.8868442,12.9347826 48.6521739,12.9347826 C59.1575903,12.9347826 67.673913,21.4511053 67.673913,31.9565217 C67.673913,34.1117269 67.3144924,36.2210565 66.6187558,38.217674 C66.2039356,39.4081203 64.90261,40.0368896 63.7121636,39.6220695 C62.5217172,39.2072493 61.8929479,37.9059237 62.3077681,36.7154773 C62.8357821,35.2001886 63.1086957,33.5985422 63.1086957,31.9565217 C63.1086957,23.9724052 56.6362904,17.5 48.6521739,17.5 C42.7496023,17.5 37.5080182,21.0697924 35.288454,26.4312368 Z M71.2488471,9.35984851 C72.1402613,10.2512627 72.1402613,11.6965305 71.2488471,12.5879447 L68.020751,15.8160409 C67.1293368,16.707455 65.6840689,16.707455 64.7926548,15.8160409 C63.9012406,14.9246267 63.9012406,13.4793588 64.7926548,12.5879447 L68.020751,9.35984851 C68.9121651,8.46843437 70.357433,8.46843437 71.2488471,9.35984851 Z M48.6521739,0 C49.9128239,0 50.9347826,1.02195872 50.9347826,2.2826087 L50.9347826,6.84782609 C50.9347826,8.10847606 49.9128239,9.13043478 48.6521739,9.13043478 C47.3915239,9.13043478 46.3695652,8.10847606 46.3695652,6.84782609 L46.3695652,2.2826087 C46.3695652,1.02195872 47.3915239,0 48.6521739,0 Z M80.6086957,31.9565217 C80.6086957,33.2171717 79.5867369,34.2391304 78.326087,34.2391304 L73.7608696,34.2391304 C72.5002196,34.2391304 71.4782609,33.2171717 71.4782609,31.9565217 C71.4782609,30.6958718 72.5002196,29.673913 73.7608696,29.673913 L78.326087,29.673913 C79.5867369,29.673913 80.6086957,30.6958718 80.6086957,31.9565217 Z M26.0555007,9.35984851 C26.9469148,8.46843437 28.3921827,8.46843437 29.2835969,9.35984851 L32.511693,12.5879447 C33.4031072,13.4793588 33.4031072,14.9246267 32.511693,15.8160409 C31.6202789,16.707455 30.175011,16.707455 29.2835969,15.8160409 L26.0555007,12.5879447 C25.1640865,11.6965305 25.1640865,10.2512627 26.0555007,9.35984851 L26.0555007,9.35984851 Z"
+                                                                                        id="Shape" fill="#FECA57">
+                                                                                    </path>
+                                                                                    <path
+                                                                                        d="M45.138293,37.2826087 C44.3551693,37.2826087 43.6267158,36.8811485 43.2084767,36.2190618 C39.4665187,30.2954152 32.9620213,26.6304348 25.826087,26.6304348 C14.4802372,26.6304348 5.2826087,35.8280633 5.2826087,47.173913 C5.2826087,58.5197628 14.4802372,67.7173913 25.826087,67.7173913 L55.5,67.7173913 C63.9043331,67.7173913 70.7173913,60.9043331 70.7173913,52.5 C70.7173913,44.0956669 63.9043331,37.2826087 55.5,37.2826087 L45.138293,37.2826087 Z M46.3580943,32.7173913 L55.5,32.7173913 C66.4256331,32.7173913 75.2826087,41.5743669 75.2826087,52.5 C75.2826087,63.4256331 66.4256331,72.2826087 55.5,72.2826087 L25.826087,72.2826087 C11.9589373,72.2826087 0.717391304,61.0410627 0.717391304,47.173913 C0.717391304,33.3067633 11.9589373,22.0652174 25.826087,22.0652174 C34.1091478,22.0652174 41.7014994,26.1099628 46.3580943,32.7173913 Z"
+                                                                                        id="Path-Copy" fill="#0ABDE3">
+                                                                                    </path>
+                                                                                </g>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                            <p class="text-gray-700 mb-2">Partly cloud</p>
+                                                            <div class="text-3xl font-bold text-gray-900 mb-6">32º<span
+                                                                    class="font-normal text-gray-700 mx-1">/</span>20º
+                                                            </div>
+                                                            <div class="flex justify-between w-full">
+                                                                <div class="flex items-center text-gray-700 px-2">
+                                                                    <svg class="mr-2 h-4" viewBox="0 0 11 18" version="1.1"
+                                                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <g id="Desktop-HD" transform="translate(-120.000000, -479.000000)"
+                                                                                fill="#60A2D7" fill-rule="nonzero">
+                                                                                <g id="Group" transform="translate(95.000000, 222.000000)">
+                                                                                    <g id="Group-3" transform="translate(25.000000, 256.774194)">
+                                                                                        <g id="028-drop" transform="translate(0.000000, 0.225806)">
+                                                                                            <path
+                                                                                                d="M11,11.9334341 C11,15.0552582 8.53750272,17.5862069 5.5,17.5862069 C2.46249728,17.5862069 0,15.0552582 0,11.9334341 C0,7.58026159 5.5,0 5.5,0 C5.5,0 11,7.58026159 11,11.9334341 L11,11.9334341 Z"
+                                                                                                id="Path"></path>
+                                                                                        </g>
+                                                                                    </g>
+                                                                                </g>
+                                                                            </g>
+                                                                        </g>
+                                                                    </svg>
+                                                                    100 l/m<sup>2</sup>
+                                                                </div>
+                                                                <div class="flex items-center text-gray-700 px-2">
+                                                                    <svg class="mr-2 h-4 w-4" viewBox="0 0 12 21" version="1.1"
+                                                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <g id="Desktop-HD" transform="translate(-201.000000, -480.000000)"
+                                                                                fill="#0ABDE3" fill-rule="nonzero">
+                                                                                <g id="Group" transform="translate(95.000000, 222.000000)">
+                                                                                    <g id="Group-3" transform="translate(25.000000, 256.774194)">
+                                                                                        <g id="wind"
+                                                                                            transform="translate(87.500000, 11.225806) rotate(-90.000000) translate(-87.500000, -11.225806) translate(77.000000, 5.225806)">
+                                                                                            <g id="w25">
+                                                                                                <path
+                                                                                                    d="M16.222113,3.9997453 C16.1020238,4.11833549 16.0351226,4.28256699 16.0372726,4.45349848 C16.0394226,4.62442997 16.1104323,4.78683812 16.2334644,4.90221395 C16.6379853,5.28943966 17.0750123,5.74649295 17.5388698,6.22999608 C17.7684767,6.47016066 18.06,6.8515674 18.2916708,7.08908699 C16.7035135,7.07321708 16.0399754,7.11553683 15.1586978,7.07639107 C14.8000983,7.05999216 14.595258,7.23032915 14.595258,7.58264107 C14.595258,7.93442398 14.7443735,8.11216693 15.1034889,8.11216693 C15.9563882,8.11216693 16.7896806,8.06878918 18.3881572,8.08571708 C17.6494273,8.82722969 16.9039897,9.56168541 16.151941,10.288989 C16.0291152,10.4045196 15.9582985,10.5669407 15.9562468,10.737822 C15.9541952,10.9087034 16.0210908,11.0728624 16.1411057,11.1914577 C16.3966491,11.4436893 16.7995644,11.4483255 17.0605651,11.2020376 C18.1048894,10.2022335 19.4185504,8.91148119 20.2957002,8.02805643 C20.4143735,7.90850313 20.5072482,7.74874608 20.5072482,7.58264107 L20.5072482,7.56465517 C20.5072482,7.39273119 20.3988943,7.22927116 20.2699017,7.11236285 C19.7188452,6.6151058 19.092457,5.97501959 18.5001229,5.35662226 C18.0589126,4.89113359 17.6081986,4.43521373 17.1482801,3.98916536 C16.8847573,3.74276899 16.4802155,3.74739022 16.222113,3.9997453 L16.222113,3.9997453 Z"
+                                                                                                    id="Path"></path>
+                                                                                                <path
+                                                                                                    d="M0,7.255721 C0,7.04623824 0.165110565,6.87695925 0.369434889,6.87695925 L18.7214742,6.87695925 C18.9252826,6.87695925 19.0909091,7.04623824 19.0909091,7.255721 L19.0909091,8.08518809 C19.0909091,8.29467085 18.9257985,8.46394984 18.7214742,8.46394984 L0.369434889,8.46394984 C0.165401634,8.46394984 0,8.29437243 0,8.08518809 L0,7.255721 Z"
+                                                                                                    id="Path"></path>
+                                                                                                <path
+                                                                                                    d="M0.369434889,8.46394984 C0.165401634,8.46394984 0,8.29437243 0,8.08518809 L0,0.378761755 C0,0.169278997 0.165110565,0 0.369434889,0 L1.17847666,0 C1.38228501,0 1.54791155,0.169278997 1.54791155,0.378761755 L1.54791155,8.08518809 C1.54791155,8.29414185 1.38280098,8.46394984 1.17847666,8.46394984 L0.369434889,8.46394984 Z"
+                                                                                                    id="Path"></path>
+                                                                                            </g>
+                                                                                            <path
+                                                                                                d="M4.108,8.53448276 C3.91028206,8.53448276 3.75,8.3634922 3.75,8.15256466 L3.75,0.381918103 C3.75,0.170689655 3.91,0 4.108,0 L4.892,0 C5.0895,0 5.25,0.170689655 5.25,0.381918103 L5.25,8.15256466 C5.25,8.3632597 5.09,8.53448276 4.892,8.53448276 L4.108,8.53448276 Z"
+                                                                                                id="Path"></path>
+                                                                                        </g>
+                                                                                    </g>
+                                                                                </g>
+                                                                            </g>
+                                                                        </g>
+                                                                    </svg>
+                                                                    20 km/h
+                                                                </div>
+                                                            </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex h-screen absolute z-20">
+                        
+                            <div class="mt-16 w-full mx-20">
+                        
+                                <!-- Slider main container -->
+                        
+                                <div class="grid grid-cols-5 gap-4 text-white">
+                                    <!-- Gempa -->
+                                    <div class="block col-span-1">
+                                        <div class="bg-red-600 rounded-t-lg shadow-2xl p-3 border-b-2 border-opacity-60 border-red-500">
+                                            <div class="flex font-medium text-xl capitalize justify-center gap-2 items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform rotate-90" fill="none"
+                                                    viewBox="0 0 24 24" stroke="yellow">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                                                </svg> Gempa Dirasakan
+                                            </div>
+                                        </div>
+                                        <div class="bg-red-600 shadow-2xl rounded-b-lg mb-3">
+                                            <div class="p-5">
+                                                <div class="shadow-2xl text-center mb-3">
+                                                    <div class="text-base">
+                                                        19-10-21 20:03:38 WIB
+                                                    </div>
+                                                    <img class="object-cover rounded-md" src="/assets/map.jpg" alt="">
+                                                </div>
+                        
+                                                <div class="bg-red-800 grid grid-cols-3 gap-2 px-5 py-2 shadow-inner mb-3">
+                                                    <div class="block border-r-2">
+                                                        <div class="flex">
+                                                            <img src="https://warning.bmkg.go.id/img/magnitude.png" width="26">
+                                                            <span class="font-bold ml-2">4.6</span>
+                                                        </div>
+                                                        <span class="text-xs">Magintudo</span>
+                                                    </div>
+                                                    <div class="block border-r-2">
+                                                        <div class="flex">
+                                                            <img src="https://warning.bmkg.go.id/img/kedalaman.png" width="26">
+                                                            <span class="font-bold ml-2">4 Km</span>
+                                                        </div>
+                                                        <span class="text-xs">Kedalaman</span>
+                                                    </div>
+                                                    <div class="block">
+                                                        <div class="flex">
+                                                            <img src="https://warning.bmkg.go.id/img/koordinat.png" width="26">
+                                                            <span class="font-bold text-sm ml-2">3.82 LS</span>
+                                                        </div>
+                                                        <span class="font-bold text-xs">135.84 BT</span>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="relative items-center mb-2">
+                                                    <dt>
+                                                        <div class="absolute flex text-white items-center">
+                                                            <!-- Heroicon name: outline/globe-alt -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                                                fill="yellow">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                                                                    clip-rule="evenodd" />
+                                                            </svg>
+                                                        </div>
+                                                        <p class="ml-6 text-lg font-medium">Lokasi Gempa</p>
+                                                    </dt>
+                                                    <dd class="ml-6 text-sm">
+                                                        Pusat gempa berada di darat 26 km baratlaut Dogiyai
+                                                    </dd>
+                                                </div>
+                        
+                                                <div class="relative items-center mb-2">
+                                                    <dt>
+                                                        <div class="absolute flex text-white items-center">
+                                                            <!-- Heroicon name: outline/globe-alt -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                                                fill="yellow">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                                                                    clip-rule="evenodd" />
+                                                            </svg>
+                                                        </div>
+                                                        <p class="ml-6 text-lg font-medium">Wilayah Dirasakan (Skala MMI)</p>
+                                                    </dt>
+                                                    <dd class="ml-6 text-sm">
+                                                        II Nabire
+                                                    </dd>
+                                                </div>
+                                                <div class="relative items-center mb-2">
+                                                    <dt>
+                                                        <div class="absolute flex text-white items-center">
+                                                            <!-- Heroicon name: outline/globe-alt -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                                                fill="yellow">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                                                                    clip-rule="evenodd" />
+                                                            </svg>
+                                                        </div>
+                                                        <p class="ml-6 text-lg font-medium">Arahan</p>
+                                                    </dt>
+                                                    <dd class="ml-6 text-sm">
+                                                        Gempa ini dirasakan untuk diteruskan pada masyarakat
+                                                    </dd>
+                                                </div>
+                                                <div class="relative items-center mb-2">
+                                                    <dt>
+                                                        <div class="absolute flex text-white items-center">
+                                                            <!-- Heroicon name: outline/globe-alt -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                                                fill="yellow">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                                                                    clip-rule="evenodd" />
+                                                            </svg>
+                                                        </div>
+                                                        <p class="ml-6 text-lg font-medium">Saran BMKG</p>
+                                                    </dt>
+                                                    <dd class="ml-6 text-sm">
+                                                        Hati-hati terhadap gempabumi susulan yang mungkin terjadi
+                                                    </dd>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="shadow-lg rounded-2xl p-4 bg-gray-900 w-full m-auto relative">
+                                            <div class="w-full h-full text-center">
+                                                <div class="flex h-full flex-col justify-between">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+                                                        class="mt-4 w-12 h-12 m-auto text-white dark:text-white" viewBox="0 0 24 24"
+                                                        stroke="currentColor">
+                                                        <path
+                                                            d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                                                    </svg>
+                                                    <p class="absolute text-sm italic text-white top-2 right-2">
+                                                        Helpdesk
+                                                    </p>
+                                                    <p class="text-white text-lg mt-3">
+                                                        Layanan Informasi
+                                                    </p>
+                                                    <p class="text-gray-50 text-base font-thin py-2 px-2">
+                                                        Untuk informasi prakiraan cuaca bandara tujuan juga dapat diakses di layanan telp: 196
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                        
+                                    <div class="block col-span-4">
+                                        <!-- slide -->
+                        
+                                        <div class="swiper mySwiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <!-- Slide 1 -->
+                                                    <div class="relative">
+                                                        <img src="/assets/jakarta.jfif"
+                                                            class="absolute inset-0 object-cover w-full h-full rounded-lg shadow-md" alt="" />
+                                                        <div class="relative bg-opacity-80 bg-indigo-900 rounded-lg shadow-xl ">
+                                                            <div
+                                                                class="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-48">
+                                                                <div class="flex flex-col items-center justify-between xl:flex-row">
+                                                                    <div class="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
+                                                                        <div class="flex gap-2 mb-6 border-b-2 py-4 w-16">
+                                                                            <img src="https://www.bmkg.go.id/asset/img/logo/logo-bmkg.svg"
+                                                                                width="60" class="shadow-md">
+                                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/1200px-Coat_of_arms_of_Jakarta.svg.png"
+                                                                                class="shadow-md h-20">
+                                                                        </div>
+                                                                        <h2
+                                                                            class="max-w-lg mb-2 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+                                                                            Bandara Tujuan: DKI Jakarta
+                                                                        </h2>
+                                                                        <p class="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
+                                                                            Jakarta (pengucapan bahasa Indonesia: [dʒaˈkarta] atau secara
+                                                                            resmi bernama Daerah Khusus
+                                                                            Ibukota Jakarta
+                                                                            (disingkat DKI Jakarta) adalah ibu kota negara dan kota terbesar
+                                                                            di Indonesia. Jakarta merupakan
+                                                                            satu-satunya kota di
+                                                                            Indonesia yang memiliki status setingkat provinsi. Jakarta
+                                                                            terletak di pesisir bagian barat laut
+                                                                            Pulau Jawa.
+                                                                        </p>
+                                                                        <div class="flex flex-row gap-2">
+                                                                            <div
+                                                                                class="flex flex-col w-1/4 bg-gray-100 text-black rounded-lg pb-4">
+                                                                                <div class="text-center pt-2 mb-2">
+                                                                                    <svg class="w-10 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                                                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                                                        viewBox="0 0 129 129"
+                                                                                        enable-background="new 0 0 129 129">
+                                                                                        <g>
+                                                                                            <path
+                                                                                                d="m64.5,92.6c15.5,0 28-12.6 28-28s-12.6-28-28-28-28,12.6-28,28 12.5,28 28,28zm0-47.9c11,0 19.9,8.9 19.9,19.9 0,11-8.9,19.9-19.9,19.9s-19.9-8.9-19.9-19.9c0-11 8.9-19.9 19.9-19.9z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m68.6,23.6v-12.9c0-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1v12.9c0,2.3 1.8,4.1 4.1,4.1s4.1-1.8 4.1-4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m60.4,105.6v12.9c0,2.3 1.8,4.1 4.1,4.1s4.1-1.8 4.1-4.1v-12.9c0-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m96.4,38.5l9.1-9.1c1.6-1.6 1.6-4.2 0-5.8-1.6-1.6-4.2-1.6-5.8,0l-9.1,9.1c-1.6,1.6-1.6,4.2 0,5.8 0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m23.5,105.6c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l9.1-9.1c1.6-1.6 1.6-4.2 0-5.8-1.6-1.6-4.2-1.6-5.8,0l-9.1,9.1c-1.6,1.6-1.6,4.2 0,5.8z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m122.5,64.6c0-2.3-1.8-4.1-4.1-4.1h-12.9c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h12.9c2.2,1.42109e-14 4.1-1.8 4.1-4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m10.6,68.7h12.9c2.3,0 4.1-1.8 4.1-4.1 0-2.3-1.8-4.1-4.1-4.1h-12.9c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.9,4.1 4.1,4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m102.6,106.8c1,0 2.1-0.4 2.9-1.2 1.6-1.6 1.6-4.2 0-5.8l-9.1-9.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l9.1,9.1c0.8,0.8 1.9,1.2 2.9,1.2z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m38.4,38.5c1.6-1.6 1.6-4.2 0-5.8l-9.1-9.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l9.1,9.1c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                        </g>
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <b class="font-normal">Tue</b><br>
+                                                                                    <strong class="text-xl">29ºC</strong>
+                                                                                </div>
+                                                                            </div>
+                        
+                                                                            <div class="flex flex-col w-1/4 bg-gray-900 rounded-lg">
+                                                                                <div class="text-center pt-2 mb-2">
+                                                                                    <svg class="w-10 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                                                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                                                        id="Capa_1" x="0px" y="0px" viewBox="0 0 33.062 33.062"
+                                                                                        style="enable-background:new 0 0 33.062 33.062;"
+                                                                                        xml:space="preserve">
+                                                                                        <path
+                                                                                            d="M25.615,26.608H6.442C2.89,26.608,0,23.719,0,20.168c0-3.502,2.81-6.361,6.294-6.439c1.241-4.304,5.161-7.275,9.67-7.275   c3.736,0,7.101,2.023,8.866,5.306c0.26-0.026,0.522-0.04,0.784-0.04c4.106,0,7.446,3.339,7.446,7.443   C33.062,23.268,29.721,26.608,25.615,26.608z M6.527,14.732C3.437,14.732,1,17.17,1,20.168c0,2.999,2.441,5.439,5.442,5.439h19.173   c3.555,0,6.446-2.892,6.446-6.445c0-3.553-2.892-6.443-6.446-6.443c-0.314,0-0.63,0.022-0.939,0.066   c-0.229,0.063-0.469-0.046-0.574-0.259c-1.545-3.13-4.663-5.073-8.137-5.073c-4.183,0-7.803,2.839-8.804,6.904   c-0.056,0.228-0.278,0.372-0.498,0.381l-0.127-0.007C6.533,14.732,6.53,14.732,6.527,14.732z"
+                                                                                            data-original="#000000" class="active-path"
+                                                                                            data-old_color="#000000" fill="#FFFFFF" />
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <b class="font-normal">Wed</b><br>
+                                                                                    <strong class="text-xl">21ºC</strong>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="flex flex-col w-1/4 bg-gray-900 rounded-lg">
+                                                                                <div class="text-center pt-2 mb-2">
+                                                                                    <svg class="w-10 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                                                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                                                        id="Capa_1" x="0px" y="0px" viewBox="0 0 33.062 33.062"
+                                                                                        style="enable-background:new 0 0 33.062 33.062;"
+                                                                                        xml:space="preserve">
+                                                                                        <path
+                                                                                            d="M25.615,26.608H6.442C2.89,26.608,0,23.719,0,20.168c0-3.502,2.81-6.361,6.294-6.439c1.241-4.304,5.161-7.275,9.67-7.275   c3.736,0,7.101,2.023,8.866,5.306c0.26-0.026,0.522-0.04,0.784-0.04c4.106,0,7.446,3.339,7.446,7.443   C33.062,23.268,29.721,26.608,25.615,26.608z M6.527,14.732C3.437,14.732,1,17.17,1,20.168c0,2.999,2.441,5.439,5.442,5.439h19.173   c3.555,0,6.446-2.892,6.446-6.445c0-3.553-2.892-6.443-6.446-6.443c-0.314,0-0.63,0.022-0.939,0.066   c-0.229,0.063-0.469-0.046-0.574-0.259c-1.545-3.13-4.663-5.073-8.137-5.073c-4.183,0-7.803,2.839-8.804,6.904   c-0.056,0.228-0.278,0.372-0.498,0.381l-0.127-0.007C6.533,14.732,6.53,14.732,6.527,14.732z"
+                                                                                            data-original="#000000" class="active-path"
+                                                                                            data-old_color="#000000" fill="#FFFFFF" />
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <b class="font-normal">Thu</b><br>
+                                                                                    <strong class="text-xl">18ºC</strong>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="flex flex-col w-1/4 bg-gray-900 rounded-lg">
+                                                                                <div class="text-center pt-2 mb-2">
+                                                                                    <svg class="w-10 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                                                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                                                        viewBox="0 0 129 129"
+                                                                                        enable-background="new 0 0 129 129">
+                                                                                        <g>
+                                                                                            <path
+                                                                                                d="m64.5,92.6c15.5,0 28-12.6 28-28s-12.6-28-28-28-28,12.6-28,28 12.5,28 28,28zm0-47.9c11,0 19.9,8.9 19.9,19.9 0,11-8.9,19.9-19.9,19.9s-19.9-8.9-19.9-19.9c0-11 8.9-19.9 19.9-19.9z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m68.6,23.6v-12.9c0-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1v12.9c0,2.3 1.8,4.1 4.1,4.1s4.1-1.8 4.1-4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m60.4,105.6v12.9c0,2.3 1.8,4.1 4.1,4.1s4.1-1.8 4.1-4.1v-12.9c0-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m96.4,38.5l9.1-9.1c1.6-1.6 1.6-4.2 0-5.8-1.6-1.6-4.2-1.6-5.8,0l-9.1,9.1c-1.6,1.6-1.6,4.2 0,5.8 0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m23.5,105.6c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l9.1-9.1c1.6-1.6 1.6-4.2 0-5.8-1.6-1.6-4.2-1.6-5.8,0l-9.1,9.1c-1.6,1.6-1.6,4.2 0,5.8z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m122.5,64.6c0-2.3-1.8-4.1-4.1-4.1h-12.9c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h12.9c2.2,1.42109e-14 4.1-1.8 4.1-4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m10.6,68.7h12.9c2.3,0 4.1-1.8 4.1-4.1 0-2.3-1.8-4.1-4.1-4.1h-12.9c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.9,4.1 4.1,4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m102.6,106.8c1,0 2.1-0.4 2.9-1.2 1.6-1.6 1.6-4.2 0-5.8l-9.1-9.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l9.1,9.1c0.8,0.8 1.9,1.2 2.9,1.2z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m38.4,38.5c1.6-1.6 1.6-4.2 0-5.8l-9.1-9.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l9.1,9.1c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                        </g>
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <b class="font-normal">Fri</b><br>
+                                                                                    <strong class="text-xl">25ºC</strong>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="w-full max-w-xl xl:px-8 xl:w-4/12">
+                                                                        <div class="rounded-md shadow-2xl bg-white">
+                                                                            <!-- component -->
+                                                                            <div
+                                                                                class="w-full shadow-2xl cursor-pointer rounded-md flex flex-col justify-center items-center text-center p-16">
+                                                                                <div class="text-md font-bold flex flex-col text-gray-900">
+                                                                                    <span class="uppercase">Today</span> <span
+                                                                                        class="font-normal text-gray-700 text-sm">July
+                                                                                        29</span>
+                                                                                </div>
+                                                                                <div class="w-32 h-32 flex items-center justify-center">
+                                                                                    <svg class="h-20" viewBox="0 0 81 73" version="1.1"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                                        <g id="Page-1" stroke="none" stroke-width="1"
+                                                                                            fill="none" fill-rule="evenodd">
+                                                                                            <g id="Desktop-HD"
+                                                                                                transform="translate(-174.000000, -308.000000)"
+                                                                                                fill-rule="nonzero">
+                                                                                                <g id="Group"
+                                                                                                    transform="translate(95.000000, 222.000000)">
+                                                                                                    <g id="2"
+                                                                                                        transform="translate(79.000000, 86.000000)">
+                                                                                                        <path
+                                                                                                            d="M35.288454,26.4312368 C34.8062502,27.5960191 33.4711041,28.1493583 32.3063218,27.6671545 C31.1415395,27.1849507 30.5882004,25.8498046 31.0704042,24.6850223 C33.990421,17.6316069 40.8868442,12.9347826 48.6521739,12.9347826 C59.1575903,12.9347826 67.673913,21.4511053 67.673913,31.9565217 C67.673913,34.1117269 67.3144924,36.2210565 66.6187558,38.217674 C66.2039356,39.4081203 64.90261,40.0368896 63.7121636,39.6220695 C62.5217172,39.2072493 61.8929479,37.9059237 62.3077681,36.7154773 C62.8357821,35.2001886 63.1086957,33.5985422 63.1086957,31.9565217 C63.1086957,23.9724052 56.6362904,17.5 48.6521739,17.5 C42.7496023,17.5 37.5080182,21.0697924 35.288454,26.4312368 Z M71.2488471,9.35984851 C72.1402613,10.2512627 72.1402613,11.6965305 71.2488471,12.5879447 L68.020751,15.8160409 C67.1293368,16.707455 65.6840689,16.707455 64.7926548,15.8160409 C63.9012406,14.9246267 63.9012406,13.4793588 64.7926548,12.5879447 L68.020751,9.35984851 C68.9121651,8.46843437 70.357433,8.46843437 71.2488471,9.35984851 Z M48.6521739,0 C49.9128239,0 50.9347826,1.02195872 50.9347826,2.2826087 L50.9347826,6.84782609 C50.9347826,8.10847606 49.9128239,9.13043478 48.6521739,9.13043478 C47.3915239,9.13043478 46.3695652,8.10847606 46.3695652,6.84782609 L46.3695652,2.2826087 C46.3695652,1.02195872 47.3915239,0 48.6521739,0 Z M80.6086957,31.9565217 C80.6086957,33.2171717 79.5867369,34.2391304 78.326087,34.2391304 L73.7608696,34.2391304 C72.5002196,34.2391304 71.4782609,33.2171717 71.4782609,31.9565217 C71.4782609,30.6958718 72.5002196,29.673913 73.7608696,29.673913 L78.326087,29.673913 C79.5867369,29.673913 80.6086957,30.6958718 80.6086957,31.9565217 Z M26.0555007,9.35984851 C26.9469148,8.46843437 28.3921827,8.46843437 29.2835969,9.35984851 L32.511693,12.5879447 C33.4031072,13.4793588 33.4031072,14.9246267 32.511693,15.8160409 C31.6202789,16.707455 30.175011,16.707455 29.2835969,15.8160409 L26.0555007,12.5879447 C25.1640865,11.6965305 25.1640865,10.2512627 26.0555007,9.35984851 L26.0555007,9.35984851 Z"
+                                                                                                            id="Shape" fill="#FECA57">
+                                                                                                        </path>
+                                                                                                        <path
+                                                                                                            d="M45.138293,37.2826087 C44.3551693,37.2826087 43.6267158,36.8811485 43.2084767,36.2190618 C39.4665187,30.2954152 32.9620213,26.6304348 25.826087,26.6304348 C14.4802372,26.6304348 5.2826087,35.8280633 5.2826087,47.173913 C5.2826087,58.5197628 14.4802372,67.7173913 25.826087,67.7173913 L55.5,67.7173913 C63.9043331,67.7173913 70.7173913,60.9043331 70.7173913,52.5 C70.7173913,44.0956669 63.9043331,37.2826087 55.5,37.2826087 L45.138293,37.2826087 Z M46.3580943,32.7173913 L55.5,32.7173913 C66.4256331,32.7173913 75.2826087,41.5743669 75.2826087,52.5 C75.2826087,63.4256331 66.4256331,72.2826087 55.5,72.2826087 L25.826087,72.2826087 C11.9589373,72.2826087 0.717391304,61.0410627 0.717391304,47.173913 C0.717391304,33.3067633 11.9589373,22.0652174 25.826087,22.0652174 C34.1091478,22.0652174 41.7014994,26.1099628 46.3580943,32.7173913 Z"
+                                                                                                            id="Path-Copy" fill="#0ABDE3">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </g>
+                                                                                            </g>
+                                                                                        </g>
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <p class="text-gray-700 mb-2">Partly cloud</p>
+                                                                                <div class="text-3xl font-bold text-gray-900 mb-6">32º<span
+                                                                                        class="font-normal text-gray-700 mx-1">/</span>20º
+                                                                                </div>
+                                                                                <div class="flex justify-between w-full">
+                                                                                    <div class="flex items-center text-gray-700 px-2">
+                                                                                        <svg class="mr-2 h-4" viewBox="0 0 11 18" version="1.1"
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                                            <g id="Page-1" stroke="none" stroke-width="1"
+                                                                                                fill="none" fill-rule="evenodd">
+                                                                                                <g id="Desktop-HD"
+                                                                                                    transform="translate(-120.000000, -479.000000)"
+                                                                                                    fill="#60A2D7" fill-rule="nonzero">
+                                                                                                    <g id="Group"
+                                                                                                        transform="translate(95.000000, 222.000000)">
+                                                                                                        <g id="Group-3"
+                                                                                                            transform="translate(25.000000, 256.774194)">
+                                                                                                            <g id="028-drop"
+                                                                                                                transform="translate(0.000000, 0.225806)">
+                                                                                                                <path
+                                                                                                                    d="M11,11.9334341 C11,15.0552582 8.53750272,17.5862069 5.5,17.5862069 C2.46249728,17.5862069 0,15.0552582 0,11.9334341 C0,7.58026159 5.5,0 5.5,0 C5.5,0 11,7.58026159 11,11.9334341 L11,11.9334341 Z"
+                                                                                                                    id="Path"></path>
+                                                                                                            </g>
+                                                                                                        </g>
+                                                                                                    </g>
+                                                                                                </g>
+                                                                                            </g>
+                                                                                        </svg>
+                                                                                        100 l/m<sup>2</sup>
+                                                                                    </div>
+                                                                                    <div class="flex items-center text-gray-700 px-2">
+                                                                                        <svg class="mr-2 h-4 w-4" viewBox="0 0 12 21"
+                                                                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                                            <g id="Page-1" stroke="none" stroke-width="1"
+                                                                                                fill="none" fill-rule="evenodd">
+                                                                                                <g id="Desktop-HD"
+                                                                                                    transform="translate(-201.000000, -480.000000)"
+                                                                                                    fill="#0ABDE3" fill-rule="nonzero">
+                                                                                                    <g id="Group"
+                                                                                                        transform="translate(95.000000, 222.000000)">
+                                                                                                        <g id="Group-3"
+                                                                                                            transform="translate(25.000000, 256.774194)">
+                                                                                                            <g id="wind"
+                                                                                                                transform="translate(87.500000, 11.225806) rotate(-90.000000) translate(-87.500000, -11.225806) translate(77.000000, 5.225806)">
+                                                                                                                <g id="w25">
+                                                                                                                    <path
+                                                                                                                        d="M16.222113,3.9997453 C16.1020238,4.11833549 16.0351226,4.28256699 16.0372726,4.45349848 C16.0394226,4.62442997 16.1104323,4.78683812 16.2334644,4.90221395 C16.6379853,5.28943966 17.0750123,5.74649295 17.5388698,6.22999608 C17.7684767,6.47016066 18.06,6.8515674 18.2916708,7.08908699 C16.7035135,7.07321708 16.0399754,7.11553683 15.1586978,7.07639107 C14.8000983,7.05999216 14.595258,7.23032915 14.595258,7.58264107 C14.595258,7.93442398 14.7443735,8.11216693 15.1034889,8.11216693 C15.9563882,8.11216693 16.7896806,8.06878918 18.3881572,8.08571708 C17.6494273,8.82722969 16.9039897,9.56168541 16.151941,10.288989 C16.0291152,10.4045196 15.9582985,10.5669407 15.9562468,10.737822 C15.9541952,10.9087034 16.0210908,11.0728624 16.1411057,11.1914577 C16.3966491,11.4436893 16.7995644,11.4483255 17.0605651,11.2020376 C18.1048894,10.2022335 19.4185504,8.91148119 20.2957002,8.02805643 C20.4143735,7.90850313 20.5072482,7.74874608 20.5072482,7.58264107 L20.5072482,7.56465517 C20.5072482,7.39273119 20.3988943,7.22927116 20.2699017,7.11236285 C19.7188452,6.6151058 19.092457,5.97501959 18.5001229,5.35662226 C18.0589126,4.89113359 17.6081986,4.43521373 17.1482801,3.98916536 C16.8847573,3.74276899 16.4802155,3.74739022 16.222113,3.9997453 L16.222113,3.9997453 Z"
+                                                                                                                        id="Path"></path>
+                                                                                                                    <path
+                                                                                                                        d="M0,7.255721 C0,7.04623824 0.165110565,6.87695925 0.369434889,6.87695925 L18.7214742,6.87695925 C18.9252826,6.87695925 19.0909091,7.04623824 19.0909091,7.255721 L19.0909091,8.08518809 C19.0909091,8.29467085 18.9257985,8.46394984 18.7214742,8.46394984 L0.369434889,8.46394984 C0.165401634,8.46394984 0,8.29437243 0,8.08518809 L0,7.255721 Z"
+                                                                                                                        id="Path"></path>
+                                                                                                                    <path
+                                                                                                                        d="M0.369434889,8.46394984 C0.165401634,8.46394984 0,8.29437243 0,8.08518809 L0,0.378761755 C0,0.169278997 0.165110565,0 0.369434889,0 L1.17847666,0 C1.38228501,0 1.54791155,0.169278997 1.54791155,0.378761755 L1.54791155,8.08518809 C1.54791155,8.29414185 1.38280098,8.46394984 1.17847666,8.46394984 L0.369434889,8.46394984 Z"
+                                                                                                                        id="Path"></path>
+                                                                                                                </g>
+                                                                                                                <path
+                                                                                                                    d="M4.108,8.53448276 C3.91028206,8.53448276 3.75,8.3634922 3.75,8.15256466 L3.75,0.381918103 C3.75,0.170689655 3.91,0 4.108,0 L4.892,0 C5.0895,0 5.25,0.170689655 5.25,0.381918103 L5.25,8.15256466 C5.25,8.3632597 5.09,8.53448276 4.892,8.53448276 L4.108,8.53448276 Z"
+                                                                                                                    id="Path"></path>
+                                                                                                            </g>
+                                                                                                        </g>
+                                                                                                    </g>
+                                                                                                </g>
+                                                                                            </g>
+                                                                                        </svg>
+                                                                                        20 km/h
+                                                                                    </div>
+                                                                                </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <!-- slide 2 -->
+                                                    <div class="relative">
+                                                        <img src="/assets/prambanan.jpg"
+                                                            class="absolute inset-0 object-cover w-full h-full rounded-lg shadow-md" alt="" />
+                                                        <div class="relative bg-opacity-80 bg-gray-800 rounded-lg shadow-xl ">
+                                                            <div
+                                                                class="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-48">
+                                                                <div class="flex flex-col items-center justify-between xl:flex-row">
+                                                                    <div class="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
+                                                                        <div class="flex gap-2 mb-6 border-b-2 py-4 w-16">
+                                                                            <img src="https://www.bmkg.go.id/asset/img/logo/logo-bmkg.svg"
+                                                                                class="shadow-md h-20">
+                        
+                                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Logo_Kota_Yogyakarta.png"
+                                                                                class="shadow-md h-20">
+                                                                        </div>
+                                                                        <h2
+                                                                            class="max-w-lg mb-2 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+                                                                            Bandara Tujuan: D.I. Yogyakarta
+                                                                        </h2>
+                                                                        <p class="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
+                                                                            Kota Yogyakarta adalah ibu kota dan pusat pemerintahan Provinsi
+                                                                            Daerah Istimewa Yogyakarta,
+                                                                            Kota Yogyakarta merupakan salah satu kota terbesar di
+                                                                            Indonesia dan kota terbesar keempat di wilayah Pulau Jawa bagian
+                                                                            selatan menurut jumlah penduduk. Kota Yogyakarta juga
+                                                                            pernah menjadi ibu kota RI pada tahun 1946.
+                                                                        </p>
+                                                                        <div class="flex flex-row gap-2">
+                                                                            <div
+                                                                                class="flex flex-col w-1/4 bg-gray-100 text-black rounded-lg pb-4">
+                                                                                <div class="text-center pt-2 mb-2">
+                                                                                    <svg class="w-10 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                                                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                                                        viewBox="0 0 129 129"
+                                                                                        enable-background="new 0 0 129 129">
+                                                                                        <g>
+                                                                                            <path
+                                                                                                d="m64.5,92.6c15.5,0 28-12.6 28-28s-12.6-28-28-28-28,12.6-28,28 12.5,28 28,28zm0-47.9c11,0 19.9,8.9 19.9,19.9 0,11-8.9,19.9-19.9,19.9s-19.9-8.9-19.9-19.9c0-11 8.9-19.9 19.9-19.9z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m68.6,23.6v-12.9c0-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1v12.9c0,2.3 1.8,4.1 4.1,4.1s4.1-1.8 4.1-4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m60.4,105.6v12.9c0,2.3 1.8,4.1 4.1,4.1s4.1-1.8 4.1-4.1v-12.9c0-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m96.4,38.5l9.1-9.1c1.6-1.6 1.6-4.2 0-5.8-1.6-1.6-4.2-1.6-5.8,0l-9.1,9.1c-1.6,1.6-1.6,4.2 0,5.8 0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m23.5,105.6c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l9.1-9.1c1.6-1.6 1.6-4.2 0-5.8-1.6-1.6-4.2-1.6-5.8,0l-9.1,9.1c-1.6,1.6-1.6,4.2 0,5.8z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m122.5,64.6c0-2.3-1.8-4.1-4.1-4.1h-12.9c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h12.9c2.2,1.42109e-14 4.1-1.8 4.1-4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m10.6,68.7h12.9c2.3,0 4.1-1.8 4.1-4.1 0-2.3-1.8-4.1-4.1-4.1h-12.9c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.9,4.1 4.1,4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m102.6,106.8c1,0 2.1-0.4 2.9-1.2 1.6-1.6 1.6-4.2 0-5.8l-9.1-9.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l9.1,9.1c0.8,0.8 1.9,1.2 2.9,1.2z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                            <path
+                                                                                                d="m38.4,38.5c1.6-1.6 1.6-4.2 0-5.8l-9.1-9.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l9.1,9.1c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#000000" />
+                                                                                        </g>
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <b class="font-normal">Tue</b><br>
+                                                                                    <strong class="text-xl">29ºC</strong>
+                                                                                </div>
+                                                                            </div>
+                        
+                                                                            <div class="flex flex-col w-1/4 bg-gray-900 rounded-lg">
+                                                                                <div class="text-center pt-2 mb-2">
+                                                                                    <svg class="w-10 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                                                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                                                        id="Capa_1" x="0px" y="0px" viewBox="0 0 33.062 33.062"
+                                                                                        style="enable-background:new 0 0 33.062 33.062;"
+                                                                                        xml:space="preserve">
+                                                                                        <path
+                                                                                            d="M25.615,26.608H6.442C2.89,26.608,0,23.719,0,20.168c0-3.502,2.81-6.361,6.294-6.439c1.241-4.304,5.161-7.275,9.67-7.275   c3.736,0,7.101,2.023,8.866,5.306c0.26-0.026,0.522-0.04,0.784-0.04c4.106,0,7.446,3.339,7.446,7.443   C33.062,23.268,29.721,26.608,25.615,26.608z M6.527,14.732C3.437,14.732,1,17.17,1,20.168c0,2.999,2.441,5.439,5.442,5.439h19.173   c3.555,0,6.446-2.892,6.446-6.445c0-3.553-2.892-6.443-6.446-6.443c-0.314,0-0.63,0.022-0.939,0.066   c-0.229,0.063-0.469-0.046-0.574-0.259c-1.545-3.13-4.663-5.073-8.137-5.073c-4.183,0-7.803,2.839-8.804,6.904   c-0.056,0.228-0.278,0.372-0.498,0.381l-0.127-0.007C6.533,14.732,6.53,14.732,6.527,14.732z"
+                                                                                            data-original="#000000" class="active-path"
+                                                                                            data-old_color="#000000" fill="#FFFFFF" />
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <b class="font-normal">Wed</b><br>
+                                                                                    <strong class="text-xl">21ºC</strong>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="flex flex-col w-1/4 bg-gray-900 rounded-lg">
+                                                                                <div class="text-center pt-2 mb-2">
+                                                                                    <svg class="w-10 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                                                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                                                        id="Capa_1" x="0px" y="0px" viewBox="0 0 33.062 33.062"
+                                                                                        style="enable-background:new 0 0 33.062 33.062;"
+                                                                                        xml:space="preserve">
+                                                                                        <path
+                                                                                            d="M25.615,26.608H6.442C2.89,26.608,0,23.719,0,20.168c0-3.502,2.81-6.361,6.294-6.439c1.241-4.304,5.161-7.275,9.67-7.275   c3.736,0,7.101,2.023,8.866,5.306c0.26-0.026,0.522-0.04,0.784-0.04c4.106,0,7.446,3.339,7.446,7.443   C33.062,23.268,29.721,26.608,25.615,26.608z M6.527,14.732C3.437,14.732,1,17.17,1,20.168c0,2.999,2.441,5.439,5.442,5.439h19.173   c3.555,0,6.446-2.892,6.446-6.445c0-3.553-2.892-6.443-6.446-6.443c-0.314,0-0.63,0.022-0.939,0.066   c-0.229,0.063-0.469-0.046-0.574-0.259c-1.545-3.13-4.663-5.073-8.137-5.073c-4.183,0-7.803,2.839-8.804,6.904   c-0.056,0.228-0.278,0.372-0.498,0.381l-0.127-0.007C6.533,14.732,6.53,14.732,6.527,14.732z"
+                                                                                            data-original="#000000" class="active-path"
+                                                                                            data-old_color="#000000" fill="#FFFFFF" />
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <b class="font-normal">Thu</b><br>
+                                                                                    <strong class="text-xl">18ºC</strong>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="flex flex-col w-1/4 bg-gray-900 rounded-lg">
+                                                                                <div class="text-center pt-2 mb-2">
+                                                                                    <svg class="w-10 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                                                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                                                        viewBox="0 0 129 129"
+                                                                                        enable-background="new 0 0 129 129">
+                                                                                        <g>
+                                                                                            <path
+                                                                                                d="m64.5,92.6c15.5,0 28-12.6 28-28s-12.6-28-28-28-28,12.6-28,28 12.5,28 28,28zm0-47.9c11,0 19.9,8.9 19.9,19.9 0,11-8.9,19.9-19.9,19.9s-19.9-8.9-19.9-19.9c0-11 8.9-19.9 19.9-19.9z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m68.6,23.6v-12.9c0-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1v12.9c0,2.3 1.8,4.1 4.1,4.1s4.1-1.8 4.1-4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m60.4,105.6v12.9c0,2.3 1.8,4.1 4.1,4.1s4.1-1.8 4.1-4.1v-12.9c0-2.3-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m96.4,38.5l9.1-9.1c1.6-1.6 1.6-4.2 0-5.8-1.6-1.6-4.2-1.6-5.8,0l-9.1,9.1c-1.6,1.6-1.6,4.2 0,5.8 0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m23.5,105.6c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l9.1-9.1c1.6-1.6 1.6-4.2 0-5.8-1.6-1.6-4.2-1.6-5.8,0l-9.1,9.1c-1.6,1.6-1.6,4.2 0,5.8z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m122.5,64.6c0-2.3-1.8-4.1-4.1-4.1h-12.9c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h12.9c2.2,1.42109e-14 4.1-1.8 4.1-4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m10.6,68.7h12.9c2.3,0 4.1-1.8 4.1-4.1 0-2.3-1.8-4.1-4.1-4.1h-12.9c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.9,4.1 4.1,4.1z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m102.6,106.8c1,0 2.1-0.4 2.9-1.2 1.6-1.6 1.6-4.2 0-5.8l-9.1-9.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l9.1,9.1c0.8,0.8 1.9,1.2 2.9,1.2z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                            <path
+                                                                                                d="m38.4,38.5c1.6-1.6 1.6-4.2 0-5.8l-9.1-9.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l9.1,9.1c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2z"
+                                                                                                data-original="#000000" class="active-path"
+                                                                                                data-old_color="#000000" fill="#FFFFFF" />
+                                                                                        </g>
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <b class="font-normal">Fri</b><br>
+                                                                                    <strong class="text-xl">25ºC</strong>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="w-full max-w-xl xl:px-8 xl:w-4/12">
+                                                                        <div class="rounded-md shadow-2xl bg-white">
+                                                                            <!-- component -->
+                                                                            <div
+                                                                                class="w-full shadow-2xl cursor-pointer rounded-md flex flex-col justify-center items-center text-center p-16">
+                                                                                <div class="text-md font-bold flex flex-col text-gray-900">
+                                                                                    <span class="uppercase">Today</span> <span
+                                                                                        class="font-normal text-gray-700 text-sm">July
+                                                                                        29</span>
+                                                                                </div>
+                                                                                <div class="w-32 h-32 flex items-center justify-center">
+                                                                                    <svg class="h-20" viewBox="0 0 81 73" version="1.1"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                                        <g id="Page-1" stroke="none" stroke-width="1"
+                                                                                            fill="none" fill-rule="evenodd">
+                                                                                            <g id="Desktop-HD"
+                                                                                                transform="translate(-174.000000, -308.000000)"
+                                                                                                fill-rule="nonzero">
+                                                                                                <g id="Group"
+                                                                                                    transform="translate(95.000000, 222.000000)">
+                                                                                                    <g id="2"
+                                                                                                        transform="translate(79.000000, 86.000000)">
+                                                                                                        <path
+                                                                                                            d="M35.288454,26.4312368 C34.8062502,27.5960191 33.4711041,28.1493583 32.3063218,27.6671545 C31.1415395,27.1849507 30.5882004,25.8498046 31.0704042,24.6850223 C33.990421,17.6316069 40.8868442,12.9347826 48.6521739,12.9347826 C59.1575903,12.9347826 67.673913,21.4511053 67.673913,31.9565217 C67.673913,34.1117269 67.3144924,36.2210565 66.6187558,38.217674 C66.2039356,39.4081203 64.90261,40.0368896 63.7121636,39.6220695 C62.5217172,39.2072493 61.8929479,37.9059237 62.3077681,36.7154773 C62.8357821,35.2001886 63.1086957,33.5985422 63.1086957,31.9565217 C63.1086957,23.9724052 56.6362904,17.5 48.6521739,17.5 C42.7496023,17.5 37.5080182,21.0697924 35.288454,26.4312368 Z M71.2488471,9.35984851 C72.1402613,10.2512627 72.1402613,11.6965305 71.2488471,12.5879447 L68.020751,15.8160409 C67.1293368,16.707455 65.6840689,16.707455 64.7926548,15.8160409 C63.9012406,14.9246267 63.9012406,13.4793588 64.7926548,12.5879447 L68.020751,9.35984851 C68.9121651,8.46843437 70.357433,8.46843437 71.2488471,9.35984851 Z M48.6521739,0 C49.9128239,0 50.9347826,1.02195872 50.9347826,2.2826087 L50.9347826,6.84782609 C50.9347826,8.10847606 49.9128239,9.13043478 48.6521739,9.13043478 C47.3915239,9.13043478 46.3695652,8.10847606 46.3695652,6.84782609 L46.3695652,2.2826087 C46.3695652,1.02195872 47.3915239,0 48.6521739,0 Z M80.6086957,31.9565217 C80.6086957,33.2171717 79.5867369,34.2391304 78.326087,34.2391304 L73.7608696,34.2391304 C72.5002196,34.2391304 71.4782609,33.2171717 71.4782609,31.9565217 C71.4782609,30.6958718 72.5002196,29.673913 73.7608696,29.673913 L78.326087,29.673913 C79.5867369,29.673913 80.6086957,30.6958718 80.6086957,31.9565217 Z M26.0555007,9.35984851 C26.9469148,8.46843437 28.3921827,8.46843437 29.2835969,9.35984851 L32.511693,12.5879447 C33.4031072,13.4793588 33.4031072,14.9246267 32.511693,15.8160409 C31.6202789,16.707455 30.175011,16.707455 29.2835969,15.8160409 L26.0555007,12.5879447 C25.1640865,11.6965305 25.1640865,10.2512627 26.0555007,9.35984851 L26.0555007,9.35984851 Z"
+                                                                                                            id="Shape" fill="#FECA57">
+                                                                                                        </path>
+                                                                                                        <path
+                                                                                                            d="M45.138293,37.2826087 C44.3551693,37.2826087 43.6267158,36.8811485 43.2084767,36.2190618 C39.4665187,30.2954152 32.9620213,26.6304348 25.826087,26.6304348 C14.4802372,26.6304348 5.2826087,35.8280633 5.2826087,47.173913 C5.2826087,58.5197628 14.4802372,67.7173913 25.826087,67.7173913 L55.5,67.7173913 C63.9043331,67.7173913 70.7173913,60.9043331 70.7173913,52.5 C70.7173913,44.0956669 63.9043331,37.2826087 55.5,37.2826087 L45.138293,37.2826087 Z M46.3580943,32.7173913 L55.5,32.7173913 C66.4256331,32.7173913 75.2826087,41.5743669 75.2826087,52.5 C75.2826087,63.4256331 66.4256331,72.2826087 55.5,72.2826087 L25.826087,72.2826087 C11.9589373,72.2826087 0.717391304,61.0410627 0.717391304,47.173913 C0.717391304,33.3067633 11.9589373,22.0652174 25.826087,22.0652174 C34.1091478,22.0652174 41.7014994,26.1099628 46.3580943,32.7173913 Z"
+                                                                                                            id="Path-Copy" fill="#0ABDE3">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </g>
+                                                                                            </g>
+                                                                                        </g>
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <p class="text-gray-700 mb-2">Partly cloud</p>
+                                                                                <div class="text-3xl font-bold text-gray-900 mb-6">32º<span
+                                                                                        class="font-normal text-gray-700 mx-1">/</span>20º
+                                                                                </div>
+                                                                                <div class="flex justify-between w-full">
+                                                                                    <div class="flex items-center text-gray-700 px-2">
+                                                                                        <svg class="mr-2 h-4" viewBox="0 0 11 18" version="1.1"
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                                            <g id="Page-1" stroke="none" stroke-width="1"
+                                                                                                fill="none" fill-rule="evenodd">
+                                                                                                <g id="Desktop-HD"
+                                                                                                    transform="translate(-120.000000, -479.000000)"
+                                                                                                    fill="#60A2D7" fill-rule="nonzero">
+                                                                                                    <g id="Group"
+                                                                                                        transform="translate(95.000000, 222.000000)">
+                                                                                                        <g id="Group-3"
+                                                                                                            transform="translate(25.000000, 256.774194)">
+                                                                                                            <g id="028-drop"
+                                                                                                                transform="translate(0.000000, 0.225806)">
+                                                                                                                <path
+                                                                                                                    d="M11,11.9334341 C11,15.0552582 8.53750272,17.5862069 5.5,17.5862069 C2.46249728,17.5862069 0,15.0552582 0,11.9334341 C0,7.58026159 5.5,0 5.5,0 C5.5,0 11,7.58026159 11,11.9334341 L11,11.9334341 Z"
+                                                                                                                    id="Path"></path>
+                                                                                                            </g>
+                                                                                                        </g>
+                                                                                                    </g>
+                                                                                                </g>
+                                                                                            </g>
+                                                                                        </svg>
+                                                                                        100 l/m<sup>2</sup>
+                                                                                    </div>
+                                                                                    <div class="flex items-center text-gray-700 px-2">
+                                                                                        <svg class="mr-2 h-4 w-4" viewBox="0 0 12 21"
+                                                                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                                            <g id="Page-1" stroke="none" stroke-width="1"
+                                                                                                fill="none" fill-rule="evenodd">
+                                                                                                <g id="Desktop-HD"
+                                                                                                    transform="translate(-201.000000, -480.000000)"
+                                                                                                    fill="#0ABDE3" fill-rule="nonzero">
+                                                                                                    <g id="Group"
+                                                                                                        transform="translate(95.000000, 222.000000)">
+                                                                                                        <g id="Group-3"
+                                                                                                            transform="translate(25.000000, 256.774194)">
+                                                                                                            <g id="wind"
+                                                                                                                transform="translate(87.500000, 11.225806) rotate(-90.000000) translate(-87.500000, -11.225806) translate(77.000000, 5.225806)">
+                                                                                                                <g id="w25">
+                                                                                                                    <path
+                                                                                                                        d="M16.222113,3.9997453 C16.1020238,4.11833549 16.0351226,4.28256699 16.0372726,4.45349848 C16.0394226,4.62442997 16.1104323,4.78683812 16.2334644,4.90221395 C16.6379853,5.28943966 17.0750123,5.74649295 17.5388698,6.22999608 C17.7684767,6.47016066 18.06,6.8515674 18.2916708,7.08908699 C16.7035135,7.07321708 16.0399754,7.11553683 15.1586978,7.07639107 C14.8000983,7.05999216 14.595258,7.23032915 14.595258,7.58264107 C14.595258,7.93442398 14.7443735,8.11216693 15.1034889,8.11216693 C15.9563882,8.11216693 16.7896806,8.06878918 18.3881572,8.08571708 C17.6494273,8.82722969 16.9039897,9.56168541 16.151941,10.288989 C16.0291152,10.4045196 15.9582985,10.5669407 15.9562468,10.737822 C15.9541952,10.9087034 16.0210908,11.0728624 16.1411057,11.1914577 C16.3966491,11.4436893 16.7995644,11.4483255 17.0605651,11.2020376 C18.1048894,10.2022335 19.4185504,8.91148119 20.2957002,8.02805643 C20.4143735,7.90850313 20.5072482,7.74874608 20.5072482,7.58264107 L20.5072482,7.56465517 C20.5072482,7.39273119 20.3988943,7.22927116 20.2699017,7.11236285 C19.7188452,6.6151058 19.092457,5.97501959 18.5001229,5.35662226 C18.0589126,4.89113359 17.6081986,4.43521373 17.1482801,3.98916536 C16.8847573,3.74276899 16.4802155,3.74739022 16.222113,3.9997453 L16.222113,3.9997453 Z"
+                                                                                                                        id="Path"></path>
+                                                                                                                    <path
+                                                                                                                        d="M0,7.255721 C0,7.04623824 0.165110565,6.87695925 0.369434889,6.87695925 L18.7214742,6.87695925 C18.9252826,6.87695925 19.0909091,7.04623824 19.0909091,7.255721 L19.0909091,8.08518809 C19.0909091,8.29467085 18.9257985,8.46394984 18.7214742,8.46394984 L0.369434889,8.46394984 C0.165401634,8.46394984 0,8.29437243 0,8.08518809 L0,7.255721 Z"
+                                                                                                                        id="Path"></path>
+                                                                                                                    <path
+                                                                                                                        d="M0.369434889,8.46394984 C0.165401634,8.46394984 0,8.29437243 0,8.08518809 L0,0.378761755 C0,0.169278997 0.165110565,0 0.369434889,0 L1.17847666,0 C1.38228501,0 1.54791155,0.169278997 1.54791155,0.378761755 L1.54791155,8.08518809 C1.54791155,8.29414185 1.38280098,8.46394984 1.17847666,8.46394984 L0.369434889,8.46394984 Z"
+                                                                                                                        id="Path"></path>
+                                                                                                                </g>
+                                                                                                                <path
+                                                                                                                    d="M4.108,8.53448276 C3.91028206,8.53448276 3.75,8.3634922 3.75,8.15256466 L3.75,0.381918103 C3.75,0.170689655 3.91,0 4.108,0 L4.892,0 C5.0895,0 5.25,0.170689655 5.25,0.381918103 L5.25,8.15256466 C5.25,8.3632597 5.09,8.53448276 4.892,8.53448276 L4.108,8.53448276 Z"
+                                                                                                                    id="Path"></path>
+                                                                                                            </g>
+                                                                                                        </g>
+                                                                                                    </g>
+                                                                                                </g>
+                                                                                            </g>
+                                                                                        </svg>
+                                                                                        20 km/h
+                                                                                    </div>
+                                                                                </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+            </div>
+
+            
+            
+            
+
+            
+            <!-- Bottom Live ticker -->
+            <div class="bg-blue-700 shadow dark:bg-gray-800 absolute bottom-1 w-1/5 h-15 z-30 ml-20" >
+                <div class="container px-3 pr-8 py-2 mx-auto md:flex md:items-center">
+                    <div class="flex items-center">
+                        <div>
+                            <a class="flex items-center text-base font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
+                                href="#">
+                                <img src="/assets/bmkganimation.gif" class="mr-3" alt="Logo BMKG" width="50">
+                                <div class="block text-white">
+                                    <div>Pusat Meteorologi Penerbangan</div>
+                                    <span id="waktu"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-red-800 shadow dark:bg-gray-800 absolute bottom-1 right-0 w-4/5 h-15 flex justify-end z-20 mr-20">
+                <div class="container px-3 pr-8 py-2 md:flex md:items-center flex justify-end overflow-x-hidden">
+                    <div class="flex items-center whitespace-nowrap ">
+                        <marquee direction="" onmouseover="this.stop();" onmouseout="this.start();" scrolldelay="10">
+                            <div class="flex">
+                                <a class="flex mr-20 items-center text-base font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
+                                    href="#">
+                                    <img src="https://www.bmkg.go.id/asset/img/logo/logo-bmkg.svg" class="mr-3" alt="Logo BMKG"
+                                        width="40">
+                                    <div class="text-white">
+                                        <div>Webinar "Peran Serta Pramuka dalam Adaptasi & Mitigasi Perubahan Iklim & Bencana Geo - Hidrometeorologi"</div>
+                                    </div>
+                                </a>
+                                <a class="flex mr-20 items-center text-base font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
+                                    href="#">
+                                    <img src="https://www.bmkg.go.id/asset/img/logo/logo-bmkg.svg" class="mr-3" alt="Logo BMKG" width="40">
+                                    <div class="text-white">
+                                        <div>Kunjungan Kerja Komisi V DPR-RI ke Provinsi Sulawesi Selatan
+                                        </div>
+                                    </div>
+                                </a>
+                        
+                                <a class="flex mr-20 items-center text-base font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
+                                    href="#">
+                                    <img src="https://www.bmkg.go.id/asset/img/logo/logo-bmkg.svg" class="mr-3" alt="Logo BMKG" width="40">
+                                    <div class="text-white">
+                                        <div>Kunjungi Lembang, Kepala BMKG Tinjau Pos Observasi-Sensor Sesar Lembang
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="flex mr-20 items-center text-base font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
+                                    href="#">
+                                    <img src="https://www.bmkg.go.id/asset/img/logo/logo-bmkg.svg" class="mr-3" alt="Logo BMKG" width="40">
+                                    <div class="text-white">
+                                        <div>Stasiun Geofisika Nabire Adakan Sosialisasi Pos Hujan Kerja Sama Tahun 2021 Pos Hujan di Kabupaten Nabire
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="flex items-center justify-center w-full h-full absolute z-10">
+                <div class="text-center h-screen h-screen min-w-full w-auto max-w-none">
+                    <section class="text-gray-900 body-font bg-white bg-opacity-40 h-screen">
+                        <div class="container px-5 py-40 mx-auto">
+                            <div class="flex flex-col text-center w-full mb-20">
+                                <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
+                                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom
+                                </h1>
+                                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
+                                    asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man
+                                    bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+                            </div>
+                            <div class="flex flex-wrap">
+                                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
+                                    <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat.
+                                        Distillery hexagon disrupt edison bulbche.</p>
+                                    <a class="text-indigo-500 inline-flex items-center">Learn More
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
+                                    <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat.
+                                        Distillery hexagon disrupt edison bulbche.</p>
+                                    <a class="text-indigo-500 inline-flex items-center">Learn More
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Neptune</h2>
+                                    <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat.
+                                        Distillery hexagon disrupt edison bulbche.</p>
+                                    <a class="text-indigo-500 inline-flex items-center">Learn More
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Melanchole</h2>
+                                    <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat.
+                                        Distillery hexagon disrupt edison bulbche.</p>
+                                    <a class="text-indigo-500 inline-flex items-center">Learn More
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div> -->
+        </div>
+    </section>
+</body>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var swiper = new Swiper(".mySwiper2", {
+                slidesPerView: 1,
+                loop: true,
+                autoplay: {
+                    delay: 15000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+        const mq = window.matchMedia("(min-width: 1920px)");
+
+            if (!mq.matches) {
+                alert("Display tidak mendukung!! Gunakan resouli Full HD atau 1920 x 1080 px.");
+            }
+
+        
+        
+        
+    </script>
+</html>
